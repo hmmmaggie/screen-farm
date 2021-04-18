@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('GaramondPremrPro-ItDisp.woff2') format('woff2'),
+        url('GaramondPremrPro-ItDisp.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('Druk-WideMedium.woff2') format('woff2'),
+        url('Druk-WideMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trade Gothic LT Std';
+    src: url('TradeGothicLTStd.woff2') format('woff2'),
+        url('TradeGothicLTStd.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('GaramondPremrPro-Disp.woff2') format('woff2'),
+        url('GaramondPremrPro-Disp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
