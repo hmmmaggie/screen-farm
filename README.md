@@ -1,5 +1,7 @@
 # screen-farm
 
+[Staged @ https://hmmmaggie.github.io/screen-farm/](https://hmmmaggie.github.io/screen-farm/)
+
 ## Project setup
 
 ```
@@ -17,13 +19,3 @@ yarn serve
 ```
 yarn build
 ```
-
-### Lints and fixes files
-
-```
-yarn lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
