@@ -1,29 +1,29 @@
 // Intro
 
 export const intro = [
-  "For this practice, we will start off with choosing the color of your quilt pattern. The make-up of your family unit will determine the color of your digital artifact. You can think about your “family unit” as the people living in your family household. To better help you answer this question, think of the people living in your most recent family household. If you are a grandparent, what type of household did you raise your children in? If you are a college student, what was your childhood household like?",
-  "In today’s society, several variations of family types exist the six listed below being the most prominent:",
+  "Screen–Farm is a generative design tool that uses questions about your family history to output a quilt pattern that uniquely represents your heritage. A new take on the family tree.",
+  "During a time when relationships are most valuable, the intention of this project is to create a visual representation of the many different types of family in the world today; celebrating their make-up, community, culture, and heritage.",
 ];
 
 // Family Type
 
 const youth = {
-  colorA: "#B7230F",
-  colorB: "#164E08",
-  colorC: "#FFB800",
-  colorBackground: "#F9EED3",
+  colorA: "#BA1632",
+  colorB: "#73CDFF",
+  colorC: "#D0FD35",
+  colorBackground: "#C9FCB8",
 };
 const twelveAge = {
-  colorA: "#1B427B",
+  colorA: "#C9FCB8",
   colorB: "#73CDFF",
-  colorC: "#C9FCB8",
+  colorC: "#1B427B",
   colorBackground: "#FFFD83",
 };
 const eighteenAge = {
-  colorA: "#1B427B",
-  colorB: "#73CDFF",
-  colorC: "#FFB36D",
-  colorBackground: "#FBFAD2",
+  colorA: "#CE7B91",
+  colorB: "#DAF1FC",
+  colorC: "#A7C8C5",
+  colorBackground: "#846885",
 };
 const twentyfiveAge = {
   colorA: "#371265",
@@ -38,27 +38,27 @@ const thirtyfiveAge = {
   colorBackground: "#E8DAB2",
 };
 const fortyfiveAge = {
-  colorA: "#BA1632",
-  colorB: "#73CDFF",
-  colorC: "#D0FD35",
-  colorBackground: "#C9FCB8",
+  colorA: "#CBD4C2",
+  colorB: "#247BA0",
+  colorC: "#C3B299",
+  colorBackground: "#50514F",
 };
 const fiftyfiveAge = {
-  colorA: "#73CDFF",
-  colorB: "#164E08",
-  colorC: "#D0FD35",
-  colorBackground: "#F9EED3",
+  colorA: "#1B427B",
+  colorB: "#73CDFF",
+  colorC: "#FFB36D",
+  colorBackground: "#FBFAD2",
 };
 const sixtyfiveAge = {
-  colorA: "#73CDFF",
+  colorA: "#BA1632",
   colorB: "#DD6E42",
-  colorC: "#D0FD35",
-  colorBackground: "#F9EED3",
+  colorC: "#FFFD83",
+  colorBackground: "#FBFAD2",
 };
 const seventyfiveAge = {
-  colorA: "#73CDFF",
-  colorB: "#DD6E42",
-  colorC: "#D0FD35",
+  colorA: "#D6E3F8",
+  colorB: "#FEF5EF",
+  colorC: "#9D5C63",
   colorBackground: "#C1ABCF",
 };
 
@@ -67,7 +67,7 @@ export const ageType = {
   id: "age_type",
   label: "What is your age?",
   heading: "Color Palette",
-  subHeading: "sub-heading",
+  subHeading: "For the purpose of this activity, your age determines the color palette of your quilt. This is important because what you know and how you relate to your family can differ depending on what stage of life you are in.",
   subLabel: null,
   value: null,
   options: [
@@ -115,13 +115,12 @@ export const ageType = {
 const familyType = {
   id: "familyType",
   label: "What type of family did you grow up in?",
-  subLabel: "For parents, what family type did you raise your family in?",
+  subLabel: null,
   value: undefined,
   options: [
     { value: { shapeList: "triangleSet", shape: 0 }, label: "Nuclear" },
     { value: { shapeList: "halfSet", shape: 3 }, label: "Single-Parent" },
     { value: { shapeList: "triangleSet", shape: 1 }, label: "Blended/ Step" },
-    { value: { shapeList: "triangleSet", shape: 2 }, label: "Childless" },
     { value: { shapeList: "halfSet", shape: 1 }, label: "Grandparent" },
     { value: { shapeList: "steepleSet", shape: 1 }, label: "Extended" },
     { value: { shapeList: "hourglassSet", shape: 1 }, label: "Other" },
@@ -157,7 +156,7 @@ const community = {
 
 export const familyMakeup = {
   heading: "Family Makeup",
-  subHeading: "sub-heading",
+  subHeading: "Your family make-up is a reflection of the family type, size, and community you were raised in - or for parents - what you raised your children in.",
   layers: [familyType, familySize, null, community],
 };
 
@@ -260,7 +259,7 @@ const reasonForMigrating = {
 
 const nativeGenCount = {
   id: "generations",
-  label: "WHow many family generations have lived in your current country?",
+  label: "How many family generations have lived in your current country?",
   subLabel: null,
   value: undefined,
   options: [
@@ -285,7 +284,7 @@ const nativeGenCount = {
 
 export const familyHeritage = {
   heading: "Family Heritage",
-  subHeading: "sub-heading",
+  subHeading: "Family heritage is important to many of us. Where we came from and our cultural experiences play a big role in shaping our perspectives on the world.",
   layers: [countriesOfOG, languageCount, reasonForMigrating, nativeGenCount],
 };
 
@@ -368,7 +367,7 @@ const creativity = {
 
 export const familyAttributes = {
   heading: "Family Attributes",
-  subHeading: "sub-heading",
+  subHeading: "Some of the most interesting aspects about our family can be found in how we spend our free time. Does your family pray or meditate? Is your schedule constantly booked with local sports games? Are you a family of artists?",
   layers: [religiousPreference, null, athleticism, creativity],
 };
 
@@ -447,6 +446,6 @@ const closeness = {
 
 export const familyCloseness = {
   heading: "Family Closeness",
-  subHeading: "sub-heading",
+  subHeading: "For this final set of questions, reflect on your personal relationship with the people in your family.",
   layers: [timeSpent, trustLevel, closeness],
 };
