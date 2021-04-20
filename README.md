@@ -2,7 +2,7 @@
 
 [Staged @ https://hmmmaggie.github.io/screen-farm/](https://hmmmaggie.github.io/screen-farm/)
 
-[Visit the Project Page on Behance @ https://www.behance.net/gallery/117900649/ScreenFarm] (https://www.behance.net/gallery/117900649/ScreenFarm)
+Visit the Project Page on Behance @ https://www.behance.net/gallery/117900649/ScreenFarm
 
 ## Project setup
 
