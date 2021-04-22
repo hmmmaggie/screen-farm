@@ -7,6 +7,8 @@ $automargin: false;
 
 @import "../assets/fonts/stylesheet.css";
 
+$text: #18171d;
+
 :root {
   font-size: 20px;
   background-color: #ffffff;
@@ -18,12 +20,26 @@ html {
 
 body {
   font-family: "Trade Gothic LT Std", sans-serif;
-  color: #18171d;
+  color: $text;
   min-height: 100%;
 }
 
 h1 {
   font-family: "Druk Wide";
+}
+
+
+button {
+  font-family: "Druk Wide";
+  background-color: transparent !important;
+  border: 1px solid $text;
+  color: $text !important;
+  border-radius: 5px;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 #app,
