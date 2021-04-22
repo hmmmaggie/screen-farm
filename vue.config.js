@@ -7,7 +7,7 @@ const conciseEmulationPlugins = [
 ];
 const Path = require("path");
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/screen-farm/" : "/",
+  //publicPath: process.env.NODE_ENV === "production" ? "/screen-farm/" : "/",
   outputDir: Path.join(__dirname, "/docs"),
   css: {
     sourceMap: true,
