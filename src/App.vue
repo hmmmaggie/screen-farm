@@ -1,15 +1,15 @@
 <template>
   <div class="project">
-    <form class="_ptm _pbs" @submit.prevent>
+    <form class="_ptm _pbs" @submit.prevent="saveQuilt">
       <h1>SCREEN-FARM</h1>
       <hr class="_mbs _mts" />
       <p v-for="(text, i) in intro" :key="i" class="_mbs">{{ text }}</p>
       <h2 class="layer-header">
         <span class="num">01</span>{{ ageType.heading }}
       </h2>
-          <p v-if="ageType.subHeading" class="layer-blurb">
-            {{ ageType.subHeading }}
-          </p>
+      <p v-if="ageType.subHeading" class="layer-blurb">
+        {{ ageType.subHeading }}
+      </p>
       <div class="color-options">
         <p class="question-label">{{ ageType.label }}</p>
         <p class="question-sub-label" v-if="ageType.subLabel">
@@ -36,7 +36,7 @@
       </div>
       <template v-if="colors">
         <div
-        class="question-group"
+          class="question-group"
           v-for="(questionSet, q) in patternLayers"
           :key="`question_set_${q}`"
         >
@@ -68,10 +68,11 @@
                 />
                 <label :for="`${question.id}_${j}`">{{ option.label }}</label>
               </div>
-              <hr class="_mbs _mts"/>
+              <hr class="_mbs _mts" />
             </div>
-          </template> </div
+          </template></div
       ></template>
+      <button type="submit" v-if="colors" class="_mbs">Save My Quilt</button>
     </form>
     <quilt
       v-if="colors && patternsStarted"
@@ -192,6 +193,16 @@ export default {
         }
         this.key++;
       },
+    },
+  },
+  methods: {
+    saveQuilt() {
+      const canvas = this.$el.querySelector("canvas");
+      const link = document.createElement("a");
+      link.download = "heritage-quilt.png";
+      link.href = canvas.toDataURL();
+      link.click();
+      link.delete;
     },
   },
 };
