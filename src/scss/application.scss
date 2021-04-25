@@ -38,7 +38,11 @@ button {
   &:hover,
   &:active,
   &:focus {
-    text-decoration: underline;
+    background-color: $text !important;
+    border: 1px solid $text;
+    color: #ffffff !important;
+    border-radius: 5px;
+    // text-decoration: underline;
   }
 }
 

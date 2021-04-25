@@ -228,7 +228,7 @@ const reasonForMigrating = {
     },
     {
       value: { shapeList: "triangleSet", shape: 3 },
-      label: "Oppurtunity",
+      label: "Opportunity",
     },
     {
       value: { shapeList: "hourglassSet", shape: 1 },
@@ -384,7 +384,7 @@ const timeSpent = {
       label: "Yes",
     },
     {
-      value: { shapeList: "triangleSet", shape: 1 },
+      value: { shapeList: "halfSet", shape: 3 },
       label: "Sometimes",
     },
     {

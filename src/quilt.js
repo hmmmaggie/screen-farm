@@ -196,7 +196,7 @@ export const quilt = (qu) => {
     { shapeList: halfSet, shape: 3 },
     { shapeList: steepleSet, shape: 1 },
   ];
-  const colorBackground = "#f9eed3"; 
+  const colorBackground = "#f9eed3";
   const colorA = "#b7230f";
   const colorB = "#164e08";
   const colorC = "#ffb800";
@@ -207,6 +207,7 @@ export const quilt = (qu) => {
   ];
   qu.setup = () => {
     qu.createCanvas(gridCount * smallBlockSize, gridCount * smallBlockSize);
+    qu.colorBackground(this.#ffffff)
     qu.noStroke(0);
     qu.blendMode(qu.MULTIPLY);
     for (let i = 0; i < quilts.length; i++) {

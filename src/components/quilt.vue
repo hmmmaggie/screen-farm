@@ -222,6 +222,7 @@ export default {
           gridCount * smallBlockSize,
           gridCount * smallBlockSize
         );
+        sketch.background(255, 255, 255);
         sketch.noStroke(0);
         sketch.blendMode(sketch.MULTIPLY);
         for (let i = 0; i < this.quiltPatterns.length; i++) {

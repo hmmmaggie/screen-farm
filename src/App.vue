@@ -199,7 +199,7 @@ export default {
     saveQuilt() {
       const canvas = this.$el.querySelector("canvas");
       const link = document.createElement("a");
-      link.download = "heritage-quilt.png";
+      link.download = "screen-farm_quilt.png";
       link.href = canvas.toDataURL();
       link.click();
       link.delete;
