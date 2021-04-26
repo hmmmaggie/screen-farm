@@ -55,10 +55,10 @@ const fiftyfiveAge = {
 
 //don't love this one
 const sixtyfiveAge = {
-  colorA: "#BA1632",
-  colorB: "#FBFAD2",
-  colorC: "#FFFD83",
-  colorBackground: "#C74F2A",
+  colorA: "#5BC6C0",
+  colorB: "#EEEEE5",
+  colorC: "#BAA9FF",
+  colorBackground: "#86EE46",
 };
 const seventyfiveAge = {
   colorA: "#C1ABCF",
@@ -173,7 +173,7 @@ const countriesOfOG = {
   value: undefined,
   options: [
     {
-      value: { shapeList: "halfSet", shape: 3 },
+      value: null,
       label: "1",
     },
     {
