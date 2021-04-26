@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <form class="_ptm _pbs" @submit.prevent="saveQuilt">
-      <h1>SCREEN-FARM</h1>
+      <h1>SCREEN–FARM</h1>
       <hr class="_mbs _mts" />
       <p v-for="(text, i) in intro" :key="i" class="_mbs">{{ text }}</p>
       <h2 class="layer-header">

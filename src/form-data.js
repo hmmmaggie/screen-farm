@@ -8,60 +8,64 @@ export const intro = [
 // Family Type
 
 const youth = {
-  colorA: "#BA1632",
-  colorB: "#73CDFF",
-  colorC: "#D0FD35",
-  colorBackground: "#C9FCB8",
+  colorA: "#4678EE",
+  colorB: "#EEEEE5",
+  colorC: "#E25672",
+  colorBackground: "#5BC680",
 };
+
 const twelveAge = {
-  colorA: "#C9FCB8",
-  colorB: "#73CDFF",
-  colorC: "#1B427B",
-  colorBackground: "#FFFD83",
+  colorA: "#3C8871",
+  colorB: "#CF5F4F",
+  colorC: "#EEE7DD",
+  colorBackground: "#FAA2B6",
 };
 const eighteenAge = {
   colorA: "#CE7B91",
-  colorB: "#DAF1FC",
-  colorC: "#A7C8C5",
-  colorBackground: "#846885",
+  colorB: "#EEEEE5",
+  colorC: "#A1AEA3",
+  colorBackground: "#8376BA",
 };
+
+//don't love this one yet
 const twentyfiveAge = {
-  colorA: "#371265",
-  colorB: "#C1ABCF",
-  colorC: "#C03750",
-  colorBackground: "#A4CFE8",
+  colorA: "#418FB0",
+  colorB: "#EEE7DD",
+  colorC: "#EACA52",
+  colorBackground: "#E08A68",
 };
 const thirtyfiveAge = {
-  colorA: "#4F6D7A",
-  colorB: "#DD6E42",
+  colorA: "#E8DAB2",
+  colorB: "#4F6D7A",
   colorC: "#C0D6DF",
-  colorBackground: "#E8DAB2",
+  colorBackground: "#C74F2A",
 };
 const fortyfiveAge = {
-  colorA: "#CBD4C2",
-  colorB: "#247BA0",
+  colorA: "#247BA0",
+  colorB: "#CBD4C2",
   colorC: "#C3B299",
   colorBackground: "#50514F",
 };
 const fiftyfiveAge = {
-  colorA: "#1B427B",
-  colorB: "#73CDFF",
-  colorC: "#FFB36D",
-  colorBackground: "#FBFAD2",
-};
-const sixtyfiveAge = {
-  colorA: "#BA1632",
-  colorB: "#DD6E42",
-  colorC: "#FFFD83",
-  colorBackground: "#FBFAD2",
-};
-const seventyfiveAge = {
-  colorA: "#D6E3F8",
-  colorB: "#FEF5EF",
-  colorC: "#9D5C63",
-  colorBackground: "#C1ABCF",
+  colorA: "#8EAFDE",
+  colorB: "#FFE1E6",
+  colorC: "#FFBB6C",
+  colorBackground: "#C74F2A",
 };
 
+//don't love this one
+const sixtyfiveAge = {
+  colorA: "#BA1632",
+  colorB: "#FBFAD2",
+  colorC: "#FFFD83",
+  colorBackground: "#C74F2A",
+};
+const seventyfiveAge = {
+  colorA: "#C1ABCF",
+  colorB: "#FEF5EF",
+  colorC: "#D6E3F8",
+  colorBackground: "#9D5C63",
+};
 
 export const ageType = {
   id: "age_type",
@@ -133,12 +137,12 @@ const familySize = {
   subLabel: "This includes: birth, adoptive, half, and step family members.",
   value: undefined,
   options: [
-    { value: { shapeList: "halfSet", shape: 2 }, label: "1" },
     { value: { shapeList: "halfSet", shape: 0 }, label: "2" },
     { value: { shapeList: "triangleSet", shape: 3 }, label: "3" },
-    { value: { shapeList: "triangleSet", shape: 0 }, label: "4-6" },
-    { value: { shapeList: "steepleSet", shape: 2 }, label: "7-9" },
-    { value: { shapeList: "hourglassSet", shape: 0 }, label: "10+" },
+    { value: { shapeList: "triangleSet", shape: 0 }, label: "4" },
+    { value: null, label: "5-7" },
+    { value: { shapeList: "steepleSet", shape: 2 }, label: "8-10" },
+    { value: { shapeList: "hourglassSet", shape: 0 }, label: "11+" },
   ],
 };
 
